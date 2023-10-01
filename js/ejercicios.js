@@ -3,22 +3,18 @@
 
 
 // 1: Calculadora de Edad
-function CalculadoraDeEdad() {
-  let fechaNacimiento = prompt("Ingrese su Fecha de Nacimiento con el siguiente formato: 'YYYY-MM-DD' ");
-
+function CalculadoraDeEdad(fechaNacimiento) {
   const hoy = new Date();
-    const fechaUsuario = new Date(fechaNacimiento);
-    const años = hoy.getFullYear() - fechaUsuario.getFullYear();
-    const mesActual = hoy.getMonth();
-    const mesNacimiento = fechaUsuario.getMonth();
-    if (mesActual < mesNacimiento || (mesActual === mesNacimiento && hoy.getDate() < fechaUsuario.getDate())) {
-      return años - 1;
-    }
-    const edad = años;
-    const resultado = document.getElementById("resultado")
-    resultado.innerHTML = `Hola ${nombreUsuario}, tienes ${edad} años!`;
-    console.log(`Hola ${nombreUsuario}, tienes ${edad} años!`);
+  const fechaUsuario = new Date(fechaNacimiento);
+  const anos = hoy.getFullYear() - fechaUsuario.getFullYear();
+  const mesActual = hoy.getMonth();
+  const mesNacimiento = fechaUsuario.getMonth();
+  if (mesActual < mesNacimiento || (mesActual === mesNacimiento && hoy.getDate() < fechaUsuario.getDate())) {
+    return anos - 1;
+  }
+  return anos;
 }
+
 
 
 //2 Tirando Fruta: TERMINADO. 
@@ -41,11 +37,11 @@ function TirandoFruta (){
 
 // 3: Comparando datos y tipos
 function CompararDatosYTipos(){
+  resultado = document.getElementById('resultado')
   resultado.innerHTML += `\n Punto A: ${10 == '10'}`;
   resultado.innerHTML += `\n Punto B: ${10 === '10'}, la diferencia es que en este caso da FALSE, esto es porque comprara tambien el tipo de dato y uno es int y el otro string`
   resultado.innerHTML += `\n Punto C: ${typeof 10.6}`
   resultado.innerHTML += `\n Punto D: ${true == 1}, las conclusiones que podemos obtener es que 'true' es considerado como 1 positivo.`
-  
 }
 //4: Yo Objeto. TERMINADO. 
  function YoObjeto(){

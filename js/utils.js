@@ -2,7 +2,10 @@
 // let nombreUsuario= prompt("Ingrese su Nombre:");
 // let fechaNacimiento = prompt("Ingrese su Fecha de Nacimiento con el siguiente formato: 'YYYY-MM-DD' ");
 // const edad = CalculadoraDeEdad(fechaNacimiento);
+// const resultado = document.getElementById("resultado")
+// resultado.innerHTML = `Hola ${nombreUsuario}, tienes ${edad} años!`;
 // console.log(`Hola ${nombreUsuario}, tienes ${edad} años!`);
+
 
 //2: Tirando Fruta
 // const frutas = ["manzana", "banana", "mandarina", "naranja", "uvas", "tomate", "pera", "pomelo", "frutilla", "ananá"]
